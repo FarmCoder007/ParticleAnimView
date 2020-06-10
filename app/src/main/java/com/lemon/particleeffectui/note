@@ -9,3 +9,9 @@
 3 爆炸结束控件恢复
 
 防止需求更改对粒子效果进行抽取
+
+重要api:
+//取得当前粒子所在像素位置的颜色      横坐标： 列数* 每列占宽度    纵坐标  ：行数* 每行占高度
+int color = bitmap.getPixel(column * bitmap_part_w, row * bitmap_part_h);
+// 返回[0,1) 之间的随机 浮点型数
+random.nextFloat()
